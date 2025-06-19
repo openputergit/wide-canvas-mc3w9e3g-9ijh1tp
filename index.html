@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NobleDialer - AI-Powered Cloud Contact Center Solution</title>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #0046FF 0%, #2563EB 100%);
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+        .logo-carousel {
+            animation: scroll 20s linear infinite;
+        }
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-100%); }
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-sm z-50">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex items-center justify-between">
+                <div class="text-2xl font-bold text-blue-600">NobleDialer</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#features" class="hover:text-blue-600">Features</a>
+                    <a href="#solutions" class="hover:text-blue-600">Solutions</a>
+                    <a href="#integrations" class="hover:text-blue-600">Integrations</a>
+                    <a href="#contact" class="hover:text-blue-600">Contact</a>
+                </div>
+                <div class="flex space-x-4">
+                    <button class="hidden md:block px-4 py-2 text-blue-600 border border-blue-600 rounded-lg hover:bg-blue-50">
+                        Login
+                    </button>
+                    <button class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700">
+                        Get Started
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-28 pb-20 gradient-bg">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 text-white">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-6">Elevate Every Conversation with NobleDialer</h1>
+                    <p class="text-xl mb-8">AI-powered omnichannel contact center and telephony for the modern business.</p>
+                    <div class="flex space-x-4">
+                        <button class="px-6 py-3 bg-white text-blue-600 rounded-lg hover:bg-gray-100">
+                            Get Started
+                        </button>
+                        <button class="px-6 py-3 border-2 border-white text-white rounded-lg hover:bg-white hover:text-blue-600">
+                            Request Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="md:w-1/2 mt-10 md:mt-0">
+                    <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&w=600" 
+                         alt="Dashboard Preview" class="rounded-lg shadow-xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-16">Powerful Features for Modern Business</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="feature-card bg-white p-6 rounded-lg shadow-lg">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="bi bi-telephone-fill"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Predictive Dialer & Auto Dialer</h3>
+                    <p class="text-gray-600">Maximize agent productivity with AI-powered dialing systems and smart call routing.</p>
+                </div>
+                <!-- More feature cards... -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions Section -->
+    <section id="solutions" class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-16">Solutions for Every Team</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="p-6 border rounded-lg">
+                    <h3 class="text-xl font-bold mb-4">For Sales Teams</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-center">
+                            <i class="bi bi-check2-circle text-green-500 mr-2"></i>
+                            Automated outbound campaigns
+                        </li>
+                        <!-- More list items... -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-2xl mx-auto">
+                <h2 class="text-3xl font-bold text-center mb-8">Get Started with NobleDialer</h2>
+                <form class="space-y-6">
+                    <div>
+                        <input type="text" placeholder="Full Name" class="w-full px-4 py-3 rounded-lg border">
+                    </div>
+                    <div>
+                        <input type="email" placeholder="Email Address" class="w-full px-4 py-3 rounded-lg border">
+                    </div>
+                    <div>
+                        <textarea placeholder="Message" rows="4" class="w-full px-4 py-3 rounded-lg border"></textarea>
+                    </div>
+                    <button type="submit" class="w-full py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700">
+                        Submit Request
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">NobleDialer</h3>
+                    <p class="text-gray-400">Transform your business communications with AI-powered solutions.</p>
+                </div>
+                <!-- More footer columns... -->
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 NobleDialer. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize ScrollReveal
+        ScrollReveal().reveal('.feature-card', {
+            delay: 200,
+            distance: '20px',
+            origin: 'bottom',
+            interval: 100
+        });
+
+        // Mobile menu toggle
+        const mobileMenu = document.querySelector('#mobile-menu');
+        const menuButton = document.querySelector('#menu-button');
+        
+        if(menuButton) {
+            menuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+    </script>
+<script>document.body.addEventListener('wheel', e => { if (!e.ctrlKey) return; e.preventDefault(); return }, { passive: false })</script>
+	</body>
+</html>
